@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(81,80,80);
+    background: linear-gradient(180deg, rgba(81,80,80,1) 24%, rgba(46,46,46,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+    height: 80vh;
+}
+
+#countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    height: 60%;
+    width: 100%;
+    border: 1rem solid red;
+    margin: 0px 2rem 2rem;
+}
+
+#countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#countdown span {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#countdown p {
+    font-size: 1.7rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.6;
+}
+
+@media (min-width: 500px) {
+    #countdown {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media (min-width: 700px) {
+    #countdown {
+        height: 650px;
+        width: 650px;
+    }
+
+    #countdown span {
+        font-size: 9rem;
+    }
+    
+    #countdown p {
+        font-size: 2.7rem;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 1000px) {
+    #countdown {
+        height: 900px;
+        width: 900px;
+    }
+}
